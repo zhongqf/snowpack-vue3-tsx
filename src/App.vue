@@ -5,7 +5,10 @@
       <p>
         Edit
         <code>src/App.vue</code> and save to reload. go!
-        <Counter />
+        <br/>
+        TsxCounter: <TsxCounter />
+        <br/>
+        SfcCounter: <SfcCounter />
       </p>
       <a
         class="App-link"
@@ -18,16 +21,17 @@
 </template>
 
 <script>
-import Counter from './components/Counter.tsx'
+import TsxCounter from './components/TsxCounter.tsx'
+import SfcCounter from './components/SfcCounter.vue'
 
 export default {
   data() {
     return {
-      message: "Learn Vue"
+      message: "Learn Vue",
     };
   },
   components: {
-    Counter
+    TsxCounter, SfcCounter
   }
 };
 </script>
